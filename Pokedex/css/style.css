@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'VT323';
+}
+body{
+    text-align: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsjvD5jJXnC7IgFdmcw7T0eC9YzKhvSdeOxQ&usqp=CAU);
+background-size: cover;
+}
+
+main{
+    display: inline-block;
+    margin-top: 40%;
+    padding: 15px;
+    position: relative;
+}
+
+.pokedex{
+    width: 100%;
+    max-width: 425px;
+}
+
+.pokemon_image{
+    position: absolute;
+    height: 13%;
+    left: 16%;
+    bottom: 45%;
+    width: 12%;
+}
+.pokemon_costa{
+    position: absolute;
+    height: 13%;
+    left: 31%;
+    bottom: 45%;
+    width: 9%;
+}
+
+.pokemon_data{
+    position: absolute;
+    color: #fff;
+    font-weight: 600;
+    top: 37%;
+    left:17%;
+    font-size: clamp(4px, 4vw, 30px);
+}
+
+.pokemon_name{
+    text-transform: capitalize;
+}
+.form{
+    position: absolute;
+    bottom: 22%;
+    left: 5%;
+    outline: none;
+}
+
+
+.input_search{
+    outline: none;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: clamp(2px, 4vw, 30px);
+    width: 50%;
+    padding-bottom: 2%;
+    padding-top: 3.5%;
+}
+
+.buttons{
+    position: absolute;
+    right: 25%;
+    transform: translate(-60%, 0);
+    bottom: 30.5%;
+    display: flex;
+    gap: 15px;
+}
+
+.button{
+    width: 100%;
+    background-color: #fff;
+    font-size: clamp(5px, 3vw, 80px);
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.button:active{
+    background-color: #aaa;
+}
+
+.pokemon_status{
+    position: absolute;
+    font-size: clamp(3px, 2.5vw, 30px);
+    right: 20.9%;
+    top: 38.5%;
+    color: #fff;
+    font-weight: 400;
+    overflow: auto;
+    width: 20%;
+}
+
+.pokemon_type{
+    right: 15%;
+    width: 100%;
+}
+.ability{
+    width: 100%;
+}
+@media(min-width: 760px){
+    .input_search{
+     padding-top: 7%;
+     padding-bottom: 7%;
+     border-radius: 8px;
+    }
+    .form{
+        bottom: 20%;
+        left: 6.4%;
+    }
+    .pokedex{
+        max-width: 800px;
+    }
+    .buttons{
+        right: 25.9%;
+        bottom: 29.5%;
+        gap: 25px;
+    }
+}
